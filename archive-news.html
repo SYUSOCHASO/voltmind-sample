@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>マイウェブサイト | ニュース一覧</title>
+    <!-- CSSファイルを直接リンクする -->
+    <link rel="stylesheet" href="archive-news.css">
+    <!-- 他の必要なCSSファイルやスクリプトをここに追加 -->
+</head>
+<body class="archive-news">
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/img/main_logo.jpg" alt="VOLTMIND Logo" class="logo-image">
+        </a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#services">SERVICES</a></li>
+            <li><a href="index.html#news">NEWS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="v-shape"></div>
+<div class="news-archive">
+    <div class="cube-animation"></div>
+    <div class="news-archive-header">
+        <h1 class="news-archive-title">ニュース一覧</h1>
+    </div>
+    <div class="news-grid news-archive-grid">
+        <!-- ここに静的なニュース項目を追加 -->
+        <a href="news1.html" class="news-item">
+            <div class="news-image">
+                <img src="assets/img/news-image-1.jpg" alt="ニュース1">
+            </div>
+            <div class="news-item-content">
+                <h3 class="news-title">ニュースタイトル1</h3>
+                <p class="news-date">2024年3月1日</p>
+            </div>
+        </a>
+        <!-- 他のニュース項目も同様に追加 -->
+    </div>
+    
+    <!-- ページネーションを静的なリンクに置き換え -->
+    <div class="pagination">
+        <a href="#" class="prev">&laquo; 前へ</a>
+        <span class="current">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" class="next">次へ &raquo;</a>
+    </div>
+</div>
+
+<footer>
+    <p>これは静的化されたPHPページです。</p>
+</footer>
+
+<!-- 必要なJavaScriptファイルをここに追加 -->
+<script src="path/to/your/script.js"></script>
+</body>
+</html>

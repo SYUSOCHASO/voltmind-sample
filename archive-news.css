@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'Kosugi Maru', 'Sawarabi Gothic', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding: 0 0 50px 0; /* 下部に50pxのパディングを追加 */
+}
+
+h1 {
+    margin: 0;
+    padding-top: 20px; /* h1 要素に上部パディングを追加 */
+    text-align: center;
+}
+
+.v-shape {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .news-archive {
+        padding: 10px;
+    }
+
+    .news-archive-grid {
+        padding-top: 5px; /* モバイル版での調整 */
+        padding-left: 0; /* 左側にパディングを追加 */
+    }
+
+    .news-archive-header {
+        position: relative; /* 位置を確実にする */
+        padding-top: 140px;
+        z-index: 1; /* 他の要素より前面に表示 */
+    }
+
+    .news-archive-title {
+        font-size: 24px; /* タイトルのフォントサイズを調整 */
+        margin-bottom: 5px; /* タイトルの下に余白を追加 */
+    }
+
+    .news-list {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 5px;
+        min-height: 190px; /* 最小の高さを設定 */
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .news-image {
+        width: 100%;
+        max-width: none;
+        margin-bottom: -40px;
+        margin-left: auto; /* 左マージンを自動に設定 */
+        margin-right: -60px; /* 右マージンを0に設定 */
+    }
+
+    .news-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .news-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-item-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px; /* 上部のパディングを小さく設定 */
+    }
+
+    .news-item-content .news-title {
+        font-size: 11px !important;
+        line-height: 1.1;
+        margin-bottom: 1px;
+        font-weight: 600; /* フォントの太さを調整 */
+        max-height: none; /* 高さ制限を解除 */
+        overflow: visible;
+        text-overflow: initial;
+        display: block;
+        -webkit-line-clamp: unset; /* 最大2行まで表示 */
+        -webkit-box-orient: unset;
+        line-clamp: unset;
+        order: 1;
+        margin-top: 0; /* タイトルの上マージンを削除 */
+    }
+
+    .news-item-content .news-date {
+        font-size: 10px !important;
+        color: #888;
+        margin-top: 5px;
+        order: 2; /* 日付をタイトルの後に表示 */
+    }
+
+    .news-archive .news-item {
+        padding-bottom: 0 !important;
+    }
+
+    header, 
+    .site-header,
+    #masthead {
+        display: none !important;
+    }
+
+    /* ナビゲーションを非表示にする */
+    nav,
+    .main-navigation,
+    #site-navigation {
+        display: none !important;
+    }
+
+    /* ページの上部にマージンを追加しないようにする */
+    body {
+        margin-top: 0 !important;
+    }
+
+    .v-shape {
+        position: relative;
+        top: 0; /* この値を調整して、V字を上に移動させます */
+        margin-bottom: -100px; /* 下のコンテンツとの間隔を調整 */
+        clip-path: polygon(0 0, 100% 0, 50% 60%);
+    }
+}

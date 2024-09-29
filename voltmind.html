@@ -1,0 +1,249 @@
+<?php
+$title = "マイウェブサイト";
+$content = "これは静的化されたPHPページです。";
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTMIND - 生成AI開発を強力にサポート</title>
+    <?php wp_head(); ?>
+    <link rel="stylesheet" href="voltmind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=M+PLUS+1p:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;700&family=Kosugi+Maru&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="img/main_logo.jpg" alt="VOLTMIND Logo" class="logo-image">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#about" class="scroll-link">ABOUT</a></li>
+                <li><a href="#services" class="scroll-link">SERVICES</a></li>
+                <li><a href="#news" class="scroll-link">NEWS</a></li>
+                <li><a href="#contact" class="scroll-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="fixed-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="logo-animation">
+                        <img src="img/logo1.png" alt="ロゴ パート1" class="logo-part logo1">
+                        <img src="img/logo2.png" alt="ロゴ パート2" class="logo-part logo2">
+                        <img src="img/logo3.png" alt="ロゴ パート3" class="logo-part logo3">
+                    </div>
+                    <h1 class="fade-in"><span class="highlight">生成AI開発を強力にサポート</span></h1>
+                    <p class="fade-in"><span class="highlight">高性能GPUサーバーと専門知識をご提供し、<br>今すぐに始められる生成AIプロジェクトを皆様に</span></p>
+                </div>
+                <div class="hero-background">
+                    <!-- 立方体のアニメーションがここに追加されます -->
+                </div>
+            </section>
+        </div>
+    
+        <div class="animated-background">
+            <!-- 白い背景とアニメーション用の要素 -->
+        </div>
+
+        <div class="scrollable-content">
+        <section id="about" class="about">
+            <h1 class="floating-text about-title">ABOUT</h1>
+            <div class="about-content">
+                <h2 class="fade-in-up about-subtitle" data-delay="0">「電気が知能を持つ」</h2>
+                <div class="about-paragraph">
+                    <p class="fade-in-up" data-delay="1">VOLTMINDは、AIが私たちの生活やビジネスに溶け込み、</p>
+                    <p class="fade-in-up" data-delay="2">あらゆる場面でその価値を発揮できる未来を創造します。</p>
+                    <p class="fade-in-up indent-left" data-delay="3">VOLTMINDが切り拓く生成AIの未来にご期待ください。</p>
+                </div>
+            </div>
+        </section>
+
+            <section class="vision" id="services">
+            <h1 class="floating-text services-title">SERVICES</h1>
+                <div class="vision-list">
+                    <div class="vision-item">
+                        <div class="vision-logo">
+                            <img src="img/gpu2.jpg" alt="ZAC Logo">
+                        </div>
+                        <div class="vision-content">
+                            <div class="vision-title">
+                                <h3>AIサーバー事業</h3>
+                            </div>
+                            <div class="vision-description">
+                                <p>生成AIモデルごとに最適化されたAIサーバーを<span class="mobile-break"></span>独自開発・販売しております。<br>ニーズに合わせた最適なパフォーマンスとコスト効率を実現し、<span class="mobile-break"></span>開発・運用を強力にサポートいたします。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-logo">
+                            <img src="img/ai-server-image.png" alt="Reforma PSA Logo">
+                        </div>
+                        <div class="vision-content">
+                            <div class="vision-title">
+                                <h3>AIシステム開発</h3>
+                            </div>
+                            <div class="vision-description">
+                                <p>自社サービスの開発のみならず、豊富な実績を<span class="mobile-break"></span>持つ開発チームが、お客様の課題解決に最適な<span class="mobile-break"></span>AIシステムを受託開発いたします。</p>
+                                <p>税務特化型AI『税務GPT』、薬剤師向けAI<span class="mobile-break"></span>『薬科GPT』など業界特化のAIを開発・<span class="mobile-break"></span>サービス提供も行って<br>おります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-logo">
+                            <img src="img/ai-system-image.jpg" alt="dxeco Logo">
+                        </div>
+                        <div class="vision-content">
+                            <div class="vision-title">
+                                <h3>生成AI基盤モデル開発</h3>
+                            </div>
+                            <div class="vision-description">
+                                <p>SLM基盤モデルと可変式プロンプトシステムなど独自の研究開発を行っています。<br>将来的には全てGitHabにてオープンソースで公開予定です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-logo">
+                            <img src="img/setsuzei.png" alt="ハヤサブ Logo">
+                        </div>
+                        <div class="vision-content">
+                            <div class="vision-title">
+                                <h3>節税サーバー</h3>
+                            </div>
+                            <div class="vision-description">
+                                <p>弊社のAIサーバーを「節税対策商品」として<span class="mobile-break"></span>ご提案しております。手厚い保証もついて<span class="mobile-break"></span>いるため、安心して始めていただけます。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-logo">
+                        <img src="img/engineer.jpg" alt="Semrush Logo">
+                        </div>
+                        <div class="vision-content">
+                            <div class="vision-title">
+                                <h3>生成AIエンジニア<br>コミュニティ</h3>
+                            </div>
+                            <div class="vision-description">
+                            <p class="small-font-mobile">延べ1万人のエンジニアと連携するAIコミュニティを持ち、AIサーバーを無償で提供しながらハッカソンを<br>開催することで、収益化・開発スピードの向上・最新技術の吸収を実現しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="news-divider news-divider-top">
+                <canvas id="topCanvas"></canvas>
+            </div>
+
+            <section id="news" class="news">
+            <h1 class="floating-text news-title">NEWS</h1>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="img/satoshikun.jpg" alt="ニュース1">
+                    <div class="news-item-content">
+                        <h3>代表取締役 北森聖士のInstagram</h3>
+                        <p>随時更新</p>
+                        <a href="https://www.instagram.com/satoshi_kitamori/" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/press_release_image1.jpg" alt="ニュース2">
+                    <div class="news-item-content">
+                        <h3>SAO税理士法人<br>白須代表インタビュー</h3>
+                        <p>6月1日</p>
+                        <a href="https://prtimes.jp/main/html/rd/p/000000010.000137954.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/voltmind_rise_image.jpg" alt="ニュース3">
+                    <div class="news-item-content">
+                        <h3>薬剤師に特化した<br>AIチャットシステムを開発！</h3>
+                        <p>5月21日</p>
+                        <a href="https://prtimes.jp/main/html/rd/p/000000007.000137954.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/main_logo.jpg" alt="ニュース4">
+                    <div class="news-item-content">
+                        <h3>AIチャットシステムを開発『薬科GPT』</h3>
+                        <p>5月1日</p>
+                        <a href="https://www.nikkei.com/compass/content/PRTKDB000000007_000137954/preview" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/hiroyuki.jpg" alt="ニュース5">
+                    <div class="news-item-content">
+                        <h3>ひろゆき特別参加！<br>優勝賞金1000万獲得者が決定</h3>
+                        <p>4月30日</p>
+                        <a href="https://prtimes.jp/main/html/rd/p/000000035.000132761.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/press_release_image2.jpg" alt="ニュース6">
+                    <div class="news-item-content">
+                        <h3>『税務GPT』LINEグループで複数人での活用が可能にアップデート</h3>
+                        <p>4月15日</p>
+                        <a href="https://prtimes.jp/main/html/rd/p/000000003.000137954.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/press_release_image3.jpg" alt="ニュース7">
+                    <div class="news-item-content">
+                        <h3>LINEで手軽に税務の疑問を解決できる<br>『税務GPT』の提供開始</h3>
+                        <p>3月2日</p>
+                        <a href="https://prtimes.jp/main/html/rd/p/000000001.000137954.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="img/satoshikun-2.jpg" alt="ニュース8">
+                    <div class="news-item-content">
+                        <h3>士業 × 生成AI</h3>
+                        <p>1月15日</p>
+                        <a href="https://crownmedia.jp/aidx/5118/" class="view-button">View</a>
+                    </div>
+                </div> 
+                </div>
+                <div class="more-link">
+                    <a href="https://voltmind.wordpress.com">More</a>
+                    </div>
+                </section>
+                    
+                    <div class="news-divider news-divider-bottom">
+                    <canvas id="bottomCanvas"></canvas>
+                    </div>
+                    
+                    <div class="wave-divider-reverse"></div>
+                    
+                    <section id="contact" class="contact">
+                    <div class="contact-container">
+                    <div class="contact-logo">
+                        <img src="img/voltmind_logo.png" alt="VOLTMIND Logo">
+                    </div>
+                    <div class="contact-content">
+                        <div class="company-info">
+                            <p><strong>商　号</strong><span>株式会社&nbsp;&nbsp;VOLTMIND</span></p>
+                            <p><strong>資本金</strong><span>1,000,000円</span></p>
+                            <p><strong>代表者</strong><span>代表取締役&nbsp;&nbsp;&nbsp;&nbsp;北森 聖士</span></p>
+                            <p><strong>設　立</strong><span>2024年2月14日</span></p>
+                            <p><strong>所在地</strong><span>〒542-0081<br>大阪府大阪市中央区南船場1-3-14<span class="address-break"></span>ストークビル302（事務所）</span></p>
+                        </div>
+                    </div>
+                    <div class="contact-title">
+                        <span>CONTACT</span>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCbtYlA-boNRz_Uhaairi4Yq5W5_6oUQLgXJ8etHbGEOvq5Q/viewform" class="contact-button" target="_blank">お問い合わせ</a>
+                        <div class="footer-links">
+                            <a href="privacy-policy.html" class="footer-link">PRIVACY POLICY</a>
+                            <a href="tokushoho.html" class="footer-link">特商法取引に関する表記</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </main>
+    </div>     
+                    <!-- 新しい白い背景のセクションを追加 -->
+                    <section class="white-section"></section>
+                    <script src="voltmind.js"></script>
+                    </body>
+                    </html>
